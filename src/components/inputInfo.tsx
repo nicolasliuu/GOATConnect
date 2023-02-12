@@ -18,9 +18,6 @@ export const openai = new OpenAIApi(configuration);
 
 const ChinatPrompt = `Chinat Yu
 Teaching assistant for Computer Science Innovation and Entrepreneurship
-
-Johns Hopkins Whiting School of Engineering
-
 Johns Hopkins Whiting School of Engineering
 Hong Kong, Hong Kong SAR`;
 

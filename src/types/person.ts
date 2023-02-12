@@ -6,4 +6,6 @@ const ZodPerson = z.object({
   });
   
   export default ZodPerson;
+
   export type Person = z.infer<typeof ZodPerson>;
+
