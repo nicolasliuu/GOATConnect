@@ -34,7 +34,7 @@ export async function fetchResponse() {
     const response = await axios.post(
       "https://api.openai.com/v1/engines/davinci/jobs",
       {
-        prompt: searchprompt,
+        prompt: "Given the following description about the user: " + searchprompt + ", provide a list of coffee chat or conversation questions that the user can ask the person. These should be in list format, and between every question, include a <br/>.",
         max_tokens: 100,
       },
       {
