@@ -9,9 +9,9 @@ import { fetchResponse } from './index';
 const Prompter: NextPage = () => {
   const [response, setResponse] = useState('');
 
-  useEffect(() => {
-    fetchResponse().then(res => setResponse(res));
-  }, []);
+  // useEffect(() => {
+  //   fetchResponse().then(res => setResponse(res));
+  // }, []);
 
   return (
     <>
@@ -42,7 +42,7 @@ const Prompter: NextPage = () => {
                         <br/>
                         What are some of the challenges you faced during your experiences as a Junior Volunteer at LAC-USC MED CENTER?
                         <br/>
-                        Can you share any projects or accomplishments that you're particularly proud of from your time at Arcadia High School?
+                        Can you share any projects or accomplishments that youre particularly proud of from your time at Arcadia High School?
                         <br/>
                         What are your future career aspirations within the field of Neuroscience?
                         <br/>
