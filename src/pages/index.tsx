@@ -8,7 +8,7 @@ import axios from 'axios';
 
 //const apiKey = process.env.OPENAI_API_KEY;
 const apiKey = "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";
-var searchprompt = "";
+// var searchprompt = "";
 
 const Home: NextPage = (props: any) => {
 
@@ -29,23 +29,23 @@ const Home: NextPage = (props: any) => {
 
 export default Home;
 
-export async function fetchResponse() {
-  try {
-    const response = await axios.post(
-      "https://api.openai.com/v1/engines/davinci/jobs",
-      {
-        prompt: "Given the following description about the user: " + searchprompt + ", provide a list of coffee chat or conversation questions that the user can ask the person. These should be in list format, and between every question, include a <br/>.",
-        max_tokens: 100,
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
-        }
-      }
-    );
-    return response.data.choices[0].text;
-  } catch (error) {
-    console.error(error);
-  }
-}
+// export async function fetchResponse() {
+//   try {
+//     const response = await axios.post(
+//       "https://api.openai.com/v1/engines/davinci/jobs",
+//       {
+//         prompt: "Given the following description about the user: " + searchprompt + ", provide a list of coffee chat or conversation questions that the user can ask the person. These should be in list format, and between every question, include a <br/>.",
+//         max_tokens: 100,
+//       },
+//       {
+//         headers: {
+//           'Content-Type': 'application/json',
+//           'Authorization': `Bearer ${apiKey}`
+//         }
+//       }
+//     );
+//     return response.data.choices[0].text;
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
