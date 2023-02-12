@@ -6,11 +6,11 @@ import InputInfo from "../components/inputInfo";
 import { api } from "../utils/api";
 import axios from 'axios';
 
-//const apiKey = process.env.OPENAI_API_KEY;
-const apiKey = "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";
+const apiKey = process.env.OPENAI_API_KEY;
+//const apiKey = "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";
 var searchprompt = "";
 
-const Home: NextPage = (props: any) => {
+const Home: NextPage = () => {
 
   return (
     <>
